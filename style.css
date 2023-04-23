@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html {
+    background-color: #000000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #3700B3;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 15px;
+    margin: 4px 0;
+    text-align: justify;
+}
+
+h5 {
+    font-weight: normal;
+    font-size: 14px;
+    text-align: justify;
+}
+
+h6 {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+#main {
+    background-color: #121212;
+    color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    padding: 0 40px;
+}
+
+#questions {
+    padding: 40px 32px;
+}
+
+.test-box {
+    padding: 32px 0;
+}
+
+.question-box {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.question-box img {
+    margin-right: 20px;
+}
+
+.answers-box {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+input[type="radio"] + label:before {
+    content: '';
+    background: #fff;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    position: relative;
+    top: -0.2em;
+    margin-right: 12px;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease;
+}
+
+input[type="radio"]:checked + label:before {
+    background-color: #3700B3;
+    box-shadow: inset 0 0 0 4px #fff;
+}
+
+input[type="radio"]:focus + label:before {
+    outline: none;
+    border-color: #3700B3;
+}
+
+#check {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#check-btn {
+    padding: 12px 28px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-size: 28px;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border: 4px solid #fff;
+    z-index: 1;
+    color: #fff;
+}
+
+#check-btn:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #3700B3;
+    transition: all 0.3s ease;
+}
+
+#check-btn:hover {
+    color: #fff;
+    border: 4px solid #3700B3;
+}
+
+#check-btn:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+
+#wynik {
+    padding: 20px 40px;
+    display: none;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+thead td {
+    font-weight: bold;
+    background-color: #3700B3;
+}
+
+td {
+    border: 2px solid #fff;
+    padding: 6px;
+}

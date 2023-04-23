@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
+    <title>Kotwice kariery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src=app.js></script>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section id="main">
+        <header>
+            <h1>Poznaj swoje kotwice kariery</h1>
+            <h5>Koncepcja Kotwic kariery zaproponowana przez Edgara Scheina zakłada, że każdy w życiu kieruje się jakąś jedną podstawową motywacją do pracy. Poznanie swojej dominującej kotwicy może pomóc w odnalezieniu pracy, która będzie dawać większą satysfakcję, bo będzie zgodna z tkwiącymi w nas przekonaniami, wartościami i wynikającymi z nich celami. Im lepiej warunki pracy będą dopasowane do naszych predyspozycji, tym większa szansa na to, że przyniesie nam ona zadowolenie.</h5>
+            <h5><b>Wypełnienie kwestionariusza posłuży do znalezienia opisującej ciebie Kotwicy kariery.</b></h5>
+            <h4>Nadaj rangi (1-6) poszczególnym stwierdzeniom według klucza:</h4>
+            <h4>1 - jeśli stwierdzenie zupełnie do ciebie nie pasuje,</h4>
+            <h4>2 lub 3 - jeśli pasuje w niektórych sytuacjach,</h4>
+            <h4>4 lub 5 - jeśli w dużej mierze do ciebie pasuje,</h4>
+            <h4>6 - jeśli całkowicie do ciebie pasuje.</h4>
+        </header>
+        <section id="questions">
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>1. Marzę o zawodzie, w którym osiągnę wysoki stopień profesjonalizmu i ludzie będą zwracali się do mnie po radę.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question1" id="a1" class="check-input"><label for="a1">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question1" id="b1" class="check-input"><label for="b1">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question1" id="c1" class="check-input"><label for="c1">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question1" id="d1" class="check-input"><label for="d1">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question1" id="e1" class="check-input"><label for="e1">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question1" id="f1" class="check-input"><label for="f1">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>2. Marzę o zawodzie, w którym będę mógł zarządzać pracą innych.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question2" id="a2" class="check-input"><label for="a2">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question2" id="b2" class="check-input"><label for="b2">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question2" id="c2" class="check-input"><label for="c2">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question2" id="d2" class="check-input"><label for="d2">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question2" id="e2" class="check-input"><label for="e2">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question2" id="f2" class="check-input"><label for="f2">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>3. Marzę o zawodzie, który da mi swobodę wyboru sposobu i czasu pracy.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question3" id="a3" class="check-input"><label for="a3">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question3" id="b3" class="check-input"><label for="b3">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question3" id="c3" class="check-input"><label for="c3">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question3" id="d3" class="check-input"><label for="d3">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question3" id="e3" class="check-input"><label for="e3">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question3" id="f3" class="check-input"><label for="f3">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>4. Marzę o zawodzie, w którym poczucie bezpieczeństwa i stabilność są ważniejsze niż niezależność i autonomia.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question4" id="a4" class="check-input"><label for="a4">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question4" id="b4" class="check-input"><label for="b4">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question4" id="c4" class="check-input"><label for="c4">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question4" id="d4" class="check-input"><label for="d4">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question4" id="e4" class="check-input"><label for="e4">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question4" id="f4" class="check-input"><label for="f4">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>5. Marzę o zawodzie, w którym mogę poszukiwać pomysłów pozwalających mi na otwarcie w przyszłości własnej firmy.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question5" id="a5" class="check-input"><label for="a5">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question5" id="b5" class="check-input"><label for="b5">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question5" id="c5" class="check-input"><label for="c5">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question5" id="d5" class="check-input"><label for="d5">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question5" id="e5" class="check-input"><label for="e5">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question5" id="f5" class="check-input"><label for="f5">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>6. Marzę o zawodzie, który będzie mi dawał poczcie rzeczywistego wpływu na rozwój społeczeństwa.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question6" id="a6" class="check-input"><label for="a6">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question6" id="b6" class="check-input"><label for="b6">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question6" id="c6" class="check-input"><label for="c6">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question6" id="d6" class="check-input"><label for="d6">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question6" id="e6" class="check-input"><label for="e6">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question6" id="f6" class="check-input"><label for="f6">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>7. Marzę o zawodzie, w którym będę rozwiązywać problemy lub stawać wobec prawdziwych wyzwań.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question7" id="a7" class="check-input"><label for="a7">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question7" id="b7" class="check-input"><label for="b7">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question7" id="c7" class="check-input"><label for="c7">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question7" id="d7" class="check-input"><label for="d7">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question7" id="e7" class="check-input"><label for="e7">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question7" id="f7" class="check-input"><label for="f7">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>8. Marzę o zawodzie, który nie będzie kolidował z realizacją życia osobistego i rodzinnego.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question8" id="a8" class="check-input"><label for="a8">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question8" id="b8" class="check-input"><label for="b8">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question8" id="c8" class="check-input"><label for="c8">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question8" id="d8" class="check-input"><label for="d8">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question8" id="e8" class="check-input"><label for="e8">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question8" id="f8" class="check-input"><label for="f8">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>9. Satysfakcję w życiu zawodowym poczuję, gdy doprowadzę moje zdolności techniczne i funkcjonalne do szczytowego poziomu.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question9" id="a9" class="check-input"><label for="a9">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question9" id="b9" class="check-input"><label for="b9">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question9" id="c9" class="check-input"><label for="c9">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question9" id="d9" class="check-input"><label for="d9">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question9" id="e9" class="check-input"><label for="e9">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question9" id="f9" class="check-input"><label for="f9">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>10. Satysfakcję w życiu zawodowym poczuję, gdy będę odpowiadać za dużą organizację i podejmować decyzje dotyczące wielu ludzi.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question10" id="a10" class="check-input"><label for="a10">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question10" id="b10" class="check-input"><label for="b10">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question10" id="c10" class="check-input"><label for="c10">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question10" id="d10" class="check-input"><label for="d10">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question10" id="e10" class="check-input"><label for="e10">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question10" id="f10" class="check-input"><label for="f10">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>11. Satysfakcję w życiu zawodowym poczuję, gdy będę swobodnie decydować o zadaniach, harmonogramach i procedurach pracy.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question11" id="a11" class="check-input"><label for="a11">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question11" id="b11" class="check-input"><label for="b11">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question11" id="c11" class="check-input"><label for="c11">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question11" id="d11" class="check-input"><label for="d11">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question11" id="e11" class="check-input"><label for="e11">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question11" id="f11" class="check-input"><label for="f11">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>12. Satysfakcję w życiu zawodowym poczuję, gdy nie będę musieć przyjmować zadań zagrażających mojemu poczuciu bezpieczeństwa w firmie.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question12" id="a12" class="check-input"><label for="a12">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question12" id="b12" class="check-input"><label for="b12">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question12" id="c12" class="check-input"><label for="c12">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question12" id="d12" class="check-input"><label for="d12">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question12" id="e12" class="check-input"><label for="e12">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question12" id="f12" class="check-input"><label for="f12">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>13. Satysfakcję w życiu zawodowym poczuję, budując raczej własną firmę niż pracując na najwyższym stanowisku menadżerskim dla kogoś.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question13" id="a13" class="check-input"><label for="a13">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question13" id="b13" class="check-input"><label for="b13">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question13" id="c13" class="check-input"><label for="c13">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question13" id="d13" class="check-input"><label for="d13">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question13" id="e13" class="check-input"><label for="e13">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question13" id="f13" class="check-input"><label for="f13">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>14. Satysfakcję w życiu zawodowym poczuję, gdy będę mieć możliwość używania swoich zdolności w służeniu innym.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question14" id="a14" class="check-input"><label for="a14">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question14" id="b14" class="check-input"><label for="b14">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question14" id="c14" class="check-input"><label for="c14">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question14" id="d14" class="check-input"><label for="d14">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question14" id="e14" class="check-input"><label for="e14">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question14" id="f14" class="check-input"><label for="f14">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>15. Satysfakcję w życiu zawodowym poczuję, gdy będę mierzyć się i pokonywać trudne wyzwania.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question15" id="a15" class="check-input"><label for="a15">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question15" id="b15" class="check-input"><label for="b15">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question15" id="c15" class="check-input"><label for="c15">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question15" id="d15" class="check-input"><label for="d15">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question15" id="e15" class="check-input"><label for="e15">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question15" id="f15" class="check-input"><label for="f15">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>16. Satysfakcję w życiu zawodowym poczuję, gdy będę mógł łączyć życie osobiste, rodzinne i obowiązki w pracy.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question16" id="a16" class="check-input"><label for="a16">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question16" id="b16" class="check-input"><label for="b16">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question16" id="c16" class="check-input"><label for="c16">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question16" id="d16" class="check-input"><label for="d16">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question16" id="e16" class="check-input"><label for="e16">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question16" id="f16" class="check-input"><label for="f16">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>17. Szukam pracy, która pozwoli być wysoko wykwalifikowanym fachowcem w danej dziedzinie niż dyrektorem wysokiego szczebla.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question17" id="a17" class="check-input"><label for="a17">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question17" id="b17" class="check-input"><label for="b17">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question17" id="c17" class="check-input"><label for="c17">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question17" id="d17" class="check-input"><label for="d17">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question17" id="e17" class="check-input"><label for="e17">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question17" id="f17" class="check-input"><label for="f17">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>18. Szukam pracy, która pozwoli osiągnąć stanowisko dyrektora wysokiego szczebla.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question18" id="a18" class="check-input"><label for="a18">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question18" id="b18" class="check-input"><label for="b18">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question18" id="c18" class="check-input"><label for="c18">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question18" id="d18" class="check-input"><label for="d18">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question18" id="e18" class="check-input"><label for="e18">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question18" id="f18" class="check-input"><label for="f18">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>19. Szukam pracy, która pozwoli osiągnąć wysoką autonomię i swobodę działania.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question19" id="a19" class="check-input"><label for="a19">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question19" id="b19" class="check-input"><label for="b19">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question19" id="c19" class="check-input"><label for="c19">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question19" id="d19" class="check-input"><label for="d19">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question19" id="e19" class="check-input"><label for="e19">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question19" id="f19" class="check-input"><label for="f19">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>20. Szukam pracy, która daje poczucie bezpieczeństwa i stabilizacji.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question20" id="a20" class="check-input"><label for="a20">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question20" id="b20" class="check-input"><label for="b20">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question20" id="c20" class="check-input"><label for="c20">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question20" id="d20" class="check-input"><label for="d20">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question20" id="e20" class="check-input"><label for="e20">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question20" id="f20" class="check-input"><label for="f20">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>21. Szukam pracy, która pozwoli mi zbudować coś całkowicie zależnego od moich pomysłów i wysiłków.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question21" id="a21" class="check-input"><label for="a21">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question21" id="b21" class="check-input"><label for="b21">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question21" id="c21" class="check-input"><label for="c21">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question21" id="d21" class="check-input"><label for="d21">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question21" id="e21" class="check-input"><label for="e21">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question21" id="f21" class="check-input"><label for="f21">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>22. Szukam pracy, która pozwoli na spożytkowanie moich zdolności do budowania lepszego świata.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question22" id="a22" class="check-input"><label for="a22">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question22" id="b22" class="check-input"><label for="b22">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question22" id="c22" class="check-input"><label for="c22">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question22" id="d22" class="check-input"><label for="d22">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question22" id="e22" class="check-input"><label for="e22">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question22" id="f22" class="check-input"><label for="f22">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>23. Szukam pracy, która oferuje mi możliwość rozwiązywania problemów wyglądających na nie do rozwiązania.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question23" id="a23" class="check-input"><label for="a23">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question23" id="b23" class="check-input"><label for="b23">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question23" id="c23" class="check-input"><label for="c23">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question23" id="d23" class="check-input"><label for="d23">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question23" id="e23" class="check-input"><label for="e23">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question23" id="f23" class="check-input"><label for="f23">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>24. Szukam pracy, która pozwoli na utrzymanie równowagi między wymaganiami życia osobistego, rodzinnego i zawodowego.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question24" id="a24" class="check-input"><label for="a24">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question24" id="b24" class="check-input"><label for="b24">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question24" id="c24" class="check-input"><label for="c24">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question24" id="d24" class="check-input"><label for="d24">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question24" id="e24" class="check-input"><label for="e24">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question24" id="f24" class="check-input"><label for="f24">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>25. Wolałbym/wolałabym raczej odejść z firmy niż przyjąć rotacyjny system obejmowania stanowisk, który powoduje utratę pozycji eksperta w danej dziedzinie.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question25" id="a25" class="check-input"><label for="a25">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question25" id="b25" class="check-input"><label for="b25">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question25" id="c25" class="check-input"><label for="c25">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question25" id="d25" class="check-input"><label for="d25">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question25" id="e25" class="check-input"><label for="e25">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question25" id="f25" class="check-input"><label for="f25">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>26. Wolałbym/wolałabym raczej stanowisko dyrektora wysokiego szczebla niż pozycję menadżera—fachowca w danej dziedzinie.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question26" id="a26" class="check-input"><label for="a26">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question26" id="b26" class="check-input"><label for="b26">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question26" id="c26" class="check-input"><label for="c26">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question26" id="d26" class="check-input"><label for="d26">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question26" id="e26" class="check-input"><label for="e26">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question26" id="f26" class="check-input"><label for="f26">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>27. Wolałbym/wolałabym raczej wykonywać pracę w sposób wolny od reguł i ograniczeń.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question27" id="a27" class="check-input"><label for="a27">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question27" id="b27" class="check-input"><label for="b27">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question27" id="c27" class="check-input"><label for="c27">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question27" id="d27" class="check-input"><label for="d27">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question27" id="e27" class="check-input"><label for="e27">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question27" id="f27" class="check-input"><label for="f27">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>28. Wolałbym/wolałabym raczej pracować, mając poczucie finansowego zabezpieczenia i stałości zatrudnienia.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question28" id="a28" class="check-input"><label for="a28">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question28" id="b28" class="check-input"><label for="b28">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question28" id="c28" class="check-input"><label for="c28">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question28" id="d28" class="check-input"><label for="d28">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question28" id="e28" class="check-input"><label for="e28">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question28" id="f28" class="check-input"><label for="f28">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>29. Wolałbym/wolałabym raczej mieć poczucie sukcesu związane ze stworzeniem lub zbudowaniem czegoś w całości opartego na moim pomyśle.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question29" id="a29" class="check-input"><label for="a29">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question29" id="b29" class="check-input"><label for="b29">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question29" id="c29" class="check-input"><label for="c29">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question29" id="d29" class="check-input"><label for="d29">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question29" id="e29" class="check-input"><label for="e29">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question29" id="f29" class="check-input"><label for="f29">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>30. Wolałbym/wolałabym raczej wykonywać pracę, która przyczynia się do rozwoju społeczeństwa.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question30" id="a30" class="check-input"><label for="a30">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question30" id="b30" class="check-input"><label for="b30">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question30" id="c30" class="check-input"><label for="c30">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question30" id="d30" class="check-input"><label for="d30">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question30" id="e30" class="check-input"><label for="e30">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question30" id="f30" class="check-input"><label for="f30">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>31. Wolałbym/wolałabym raczej poszukiwać takiej pracy, która będzie wyzwaniem dla moich zdolności do rozwiązywania problemów i umiejętności współzawodnictwa.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question31" id="a31" class="check-input"><label for="a31">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question31" id="b31" class="check-input"><label for="b31">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question31" id="c31" class="check-input"><label for="c31">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question31" id="d31" class="check-input"><label for="d31">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question31" id="e31" class="check-input"><label for="e31">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question31" id="f31" class="check-input"><label for="f31">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>32. Wolałbym/wolałabym raczej równowagę między życiem prywatnym i zawodowym niż osiągnięcie wysokiej pozycji menadżerskiej.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question32" id="a32" class="check-input"><label for="a32">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question32" id="b32" class="check-input"><label for="b32">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question32" id="c32" class="check-input"><label for="c32">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question32" id="d32" class="check-input"><label for="d32">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question32" id="e32" class="check-input"><label for="e32">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question32" id="f32" class="check-input"><label for="f32">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>33. Najbardziej spełniony czuję się w pracy, w której mogę wykorzystywać moje specjalistyczne zdolności i talenty.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question33" id="a33" class="check-input"><label for="a33">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question33" id="b33" class="check-input"><label for="b33">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question33" id="c33" class="check-input"><label for="c33">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question33" id="d33" class="check-input"><label for="d33">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question33" id="e33" class="check-input"><label for="e33">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question33" id="f33" class="check-input"><label for="f33">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>34. Zmienię pracę, gdy nie da mi ona szansy na zdobycie stanowiska dyrektora wysokiego szczebla.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question34" id="a34" class="check-input"><label for="a34">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question34" id="b34" class="check-input"><label for="b34">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question34" id="c34" class="check-input"><label for="c34">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question34" id="d34" class="check-input"><label for="d34">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question34" id="e34" class="check-input"><label for="e34">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question34" id="f34" class="check-input"><label for="f34">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>35. Raczej odejdę z firmy, która będzie ograniczać moją wolność i autonomię.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question35" id="a35" class="check-input"><label for="a35">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question35" id="b35" class="check-input"><label for="b35">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question35" id="c35" class="check-input"><label for="c35">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question35" id="d35" class="check-input"><label for="d35">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question35" id="e35" class="check-input"><label for="e35">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question35" id="f35" class="check-input"><label for="f35">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>36. Marzę o karierze zawodowej, która da mi poczucie bezpieczeństwa i stabilizacji.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question36" id="a36" class="check-input"><label for="a36">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question36" id="b36" class="check-input"><label for="b36">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question36" id="c36" class="check-input"><label for="c36">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question36" id="d36" class="check-input"><label for="d36">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question36" id="e36" class="check-input"><label for="e36">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question36" id="f36" class="check-input"><label for="f36">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>37. Marzę o stworzeniu i prowadzeniu własnej firmy.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question37" id="a37" class="check-input"><label for="a37">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question37" id="b37" class="check-input"><label for="b37">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question37" id="c37" class="check-input"><label for="c37">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question37" id="d37" class="check-input"><label for="d37">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question37" id="e37" class="check-input"><label for="e37">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question37" id="f37" class="check-input"><label for="f37">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>38. Raczej odejdę z firmy niż przyjmę zadania podważające moje umiejętności pomagania innym.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question38" id="a38" class="check-input"><label for="a38">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question38" id="b38" class="check-input"><label for="b38">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question38" id="c38" class="check-input"><label for="c38">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question38" id="d38" class="check-input"><label for="d38">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question38" id="e38" class="check-input"><label for="e38">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question38" id="f38" class="check-input"><label for="f38">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>39. Rozwiązywanie problemów pozornie nierozwiązywalnych jest ważniejsze niż osiągnięcie wysokiej pozycji menadżerskiej.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question39" id="a39" class="check-input"><label for="a39">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question39" id="b39" class="check-input"><label for="b39">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question39" id="c39" class="check-input"><label for="c39">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question39" id="d39" class="check-input"><label for="d39">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question39" id="e39" class="check-input"><label for="e39">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question39" id="f39" class="check-input"><label for="f39">6</label></div>
+                </div>
+            </div>
+            <div class="test-box">
+                <div class="question-box">
+                    <img src="img/question-icon.svg" alt="question-mark" height="40px" width="40px">
+                    <h6>40. Poszukuję możliwości pracy, w która pozwala ograniczyć do minimum konflikt dom — praca.</h6>
+                </div>
+                <div class="answers-box">
+                    <div class="variant-box"><input type="radio" name="question40" id="a40" class="check-input"><label for="a40">1</label></div>
+                    <div class="variant-box"><input type="radio" name="question40" id="b40" class="check-input"><label for="b40">2</label></div>
+                    <div class="variant-box"><input type="radio" name="question40" id="c40" class="check-input"><label for="c40">3</label></div>
+                    <div class="variant-box"><input type="radio" name="question40" id="d40" class="check-input"><label for="d40">4</label></div>
+                    <div class="variant-box"><input type="radio" name="question40" id="e40" class="check-input"><label for="e40">5</label></div>
+                    <div class="variant-box"><input type="radio" name="question40" id="f40" class="check-input"><label for="f40">6</label></div>
+                </div>
+            </div>
+        </section>
+        <section id="check">
+            <button id="check-btn" onclick="check();">SPRAWDŹ</button>
+        </section>
+        <section id="wynik"></section>
+    </section>
+</body>
+
+</html>
